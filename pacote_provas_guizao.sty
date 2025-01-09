@@ -1,0 +1,107 @@
+\usepackage[default]{sourcesanspro}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazilian]{babel}
+\usepackage{cprotect}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{mathrsfs}
+\usepackage{multicol}
+\usepackage{framed}
+\usepackage{nccmath}
+\usepackage{wrapfig}
+\usepackage[inline]{enumitem}
+\usepackage{geometry}
+\usepackage{eso-pic} \AddToShipoutPictureBG{\hspace*{0.5cm}\raisebox{0.5cm}{\framebox[20cm]{\rule{0pt}{28.6cm}}}}
+\usepackage{marvosym}
+\usepackage{graphicx}
+\usepackage{tikz,tikz-cd, tkz-euclide, tikzpagenodes}
+\usetikzlibrary{babel}
+\usetikzlibrary{calc}
+\usepackage{pgfplots}
+\usepackage{verbatim}
+\pgfplotsset{compat=1.15}
+\usetikzlibrary{arrows}
+\usetikzlibrary[patterns]
+\usepackage{bm}
+\usepackage[stable]{footmisc}
+\usepackage[new]{old-arrows}
+\usepackage{afterpage}
+\usepackage[overload]{exam-randomizechoices}
+\geometry{noheadfoot=true, a4paper,total={210mm,297mm},left=10mm, right = 10mm, top=10mm,bottom= 10mm}
+\usepackage{quiver}
+\usepackage{array}
+
+\arrayrulecolor[HTML]{FC7C54}
+\newcommand{\Dem}{\begin{proof}[{\bf Dem.:}]}
+\newcommand{\esol}{\end{proof}}
+\newcommand{\xp}{^}
+\renewcommand{\figurename}{Fig.}
+\renewcommand{\sin}{\text{sen}\ }
+
+\DeclareMathOperator{\ima}{im}
+\DeclareMathOperator{\Ima}{Im}
+\DeclareMathOperator{\auto}{Aut}
+\DeclareMathOperator{\Isom}{Isom}
+\DeclareMathOperator{\galois}{Gal}
+\DeclareMathOperator{\inter}{Inn}
+\DeclareMathOperator{\exter}{Out}
+\DeclareMathOperator{\Cay}{Cay}
+\DeclareMathOperator{\diam}{diam}
+\DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\ann}{Ann}
+\DeclareMathOperator{\Ann}{Ann}
+\DeclareMathOperator{\quot}{Frac}
+\DeclareMathOperator{\mdcop}{mdc}
+\DeclareMathOperator{\Spec}{Spec}
+\DeclareMathOperator{\altura}{ht}
+\DeclareMathOperator{\coker}{coker}
+
+\newcommand{\hkr}{\varlonghookrightarrow}
+\newcommand{\res}[1]{\textcolor{gray}{\left(R: #1 \right)}}
+\newcommand{\chave}[1]{\left\{ #1 \right\}}
+\newcommand{\prt}[2]{\left(#1,#2\right)}
+\newcommand{\prtt}[1]{\left( #1 \right)}
+\newcommand{\tA}[2]{#1 \tens_{R} #2}
+\newcommand{\tensor}[2]{#1 \otimes #2}
+\newcommand{\lips}[2]{\tA{#1}{#2}-\tA{#2}{#1}}
+
+\renewcommand*\contentsname{Contents}
+\renewcommand\qedsymbol{$\blacksquare$}
+
+\newtheoremstyle{mystyle}%
+{3pt}% Space above
+{3pt}% Space below 
+{\color{black}}% Body font
+{}% Indent amount
+{\bfseries\color{black}}% Theorem head font
+{.}% Punctuation after theorem head
+{.5em}% Space after theorem head 
+{}% Theorem head spec (can be left empty, meaning ‘normal’)
+\theoremstyle{mystyle}
+\newtheorem{defi}{Definition}
+\newtheorem{exemp}{Example}
+\newtheorem{exer}{Exercício}
+\newtheorem{quest}{Questão}
+\newtheorem{props}{Affirmation}
+\newtheorem{prop}{Proposition}
+\newtheorem{teo}{Teorema}
+\newtheorem{cor}{Corollary}
+\newtheorem{lema}{Lemma}
+
+\pagestyle{empty}
+
+\renewcommand{\questionlabel}{\hskip 1.5em \bfseries\text{Questão}\ \thequestion.}
+\renewcommand{\choicelabel}{\thechoice)}
+\renewcommand{\thepartno}{\Alph{partno}}
+\pointpoints{ponto}{pontos}
+\renewcommand{\partlabel}{\thepartno)}
+\renewcommand{\choiceshook}{%
+\settowidth{\leftmargin}{W.\hskip\labelsep\hskip 0em}%
+}
+
+\everymath{\displaystyle}
